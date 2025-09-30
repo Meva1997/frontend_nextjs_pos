@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# POS - Point of Sale Application
+
+A modern, full-featured Point of Sale (POS) web application built with [Next.js](https://nextjs.org), [React](https://react.dev), and [Tailwind CSS](https://tailwindcss.com). This project demonstrates advanced front-end engineering practices, component-driven development, and seamless integration with a backend API (NestJS).
+
+**Live Demo:**  
+[https://frontend-nextjs-k6ewcuw6w-alejandro-s-projects-f78c06da.vercel.app](https://frontend-nextjs-k6ewcuw6w-alejandro-s-projects-f78c06da.vercel.app)
+
+---
+
+## Features
+
+- **Product Management**: Add, edit, and display products with images, prices, and stock levels.
+- **Sales Management**: Manage transactions, apply discounts and coupons, and review sales history by date.
+- **Shopping Cart**: Interactive cart with support for discounts and live updates.
+- **Admin Dashboard**: Dedicated admin area for managing products and sales.
+- **Responsive UI**: Optimized for desktop and mobile, powered by Tailwind CSS.
+- **Image Uploads**: Drag-and-drop product image uploading with Cloudinary integration.
+- **Notifications**: Toast notifications for user feedback (react-toastify).
+- **API Integration**: Connects to a backend (NestJS) for data persistence and business logic.
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS
+- **State Management:** Zustand, TanStack React Query
+- **Validation:** Zod (schemas for products, orders, transactions)
+- **Image Hosting:** Cloudinary
+- **Notifications:** react-toastify
+- **Backend (API):** NestJS (external, not included in this repo)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Meva1997/frontend_nextjs_pos.git
+cd frontend_nextjs_pos
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Access the app at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `/app` - Next.js app router pages (Store, Admin, Layout)
+- `/components` - UI and business logic components (Products, Sales, Cart, Uploads, Notifications)
+- `/src` - Utilities and schema definitions
+- `next.config.ts` - Next.js configuration (image domains, etc.)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Files & Components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/layout.tsx` - Main layout, provides global styles and app metadata
+- `components/products/ProductForm.tsx` - Product creation/editing form
+- `components/products/ProductsTable.tsx` - Product listing table
+- `components/cart/ShoppingCart.tsx` - Cart functionality and display
+- `components/sales/TransactionSummary.tsx` - Transaction details for sales
+- `components/ui/ToastNotification.tsx` - Toast message integration
+- `src/schemas.ts` - Zod schemas for data validation
+- `src/utils.ts` - Utility functions (currency formatting, image paths, stock checks)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Why This Project?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This POS app showcases:
+
+- Real-world business logic (sales, products, discounts, cart)
+- Modern front-end architecture principles
+- Robust state management and API communication
+- User experience considerations (responsive design, notifications)
+- Familiarity with deployment (Vercel) and cloud integrations
+
+---
+
+## Demo
+
+Try the live POS application:  
+[https://frontend-nextjs-k6ewcuw6w-alejandro-s-projects-f78c06da.vercel.app](https://frontend-nextjs-k6ewcuw6w-alejandro-s-projects-f78c06da.vercel.app)
+
+---
+
+## Contact
+
+For questions, opportunities, or more information, feel free to reach out via [GitHub profile](https://github.com/Meva1997).
