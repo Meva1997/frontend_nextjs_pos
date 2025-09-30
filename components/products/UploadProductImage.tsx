@@ -28,6 +28,7 @@ export default function UploadProductImage({
     isDragAccept,
   } = useDropzone({
     accept: {
+      "image/jpg": [".jpg"],
       "image/jpeg": [".jpg"],
       "image/png": [".png"],
     },
