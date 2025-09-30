@@ -35,7 +35,7 @@ export function getImagePath(image: string) {
     if (process.env.API_URL) {
       return `${process.env.API_URL}/img/${image}`;
     } else {
-      return `${process.env.NEXT_PUBLIC_API_URL}/img/${image}`;
+      return `${process.env.NEXT_PUBLIC_DOMAIN}/img/${image}`;
     }
   }
 }
